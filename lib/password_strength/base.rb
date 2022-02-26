@@ -140,7 +140,7 @@ module PasswordStrength
 
       case name
       when :password_size then
-        if password.size < 6
+        if password.size < 8
           score = -100
         else
           score = password.size * 4
